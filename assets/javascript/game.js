@@ -15,25 +15,23 @@ correctly guessed letters must display on invisible word
 //var wrongGuesses;
 //var letters = [1,2,3,4,5,6,7,8,9,10,11];
 //const words = ["Croquet", "Haphazard", "Numbskull", "Rhythmic", "Wildebeest", "Zigzag", "Rhythmic", "Ostracize", "Dwarves"];
-    const word = ['fat', 'lazy', 'poem', 'bug', 'boy', 'girl'];
-    let randNum = Math.floor(Math.random() * word.length);
-    let choosenWord = word[randNum];
-    let rightWord = [];
-    let wrongWord = [];
-    let underScore = [];
-    var winCount = 0;
-    var loseCount = 0;
+    var word = ["fat", "lazy", "poem", "bug", "boy", "girl"];
+    var randNum = Math.floor(Math.random() * word.length);
+    var choosenWord = word[randNum];
+    var rightWord = [];
+    var wrongWord = [];
+    var underScore = [];
     var guessesLeft = 6;
     var rightGuessCounter = 0;
 //DOM manipulation
-    let docUnderScore = document.getElementsByClassName('play');
-    let docRightGuess = document.getElementsByClassName('rightLetters');
-    let docWrongGuess = document.getElementsByClassName('wrongLetters');
-    let docGuessLeft = document.getElementsByClassName('numbersLeft');
+    var docUnderScore = document.getElementsByClassName('play');
+    var docRightGuess = document.getElementsByClassName('rightLetters');
+    var docWrongGuess = document.getElementsByClassName('wrongLetters');
+    var docGuessLeft = document.getElementsByClassName('numbersLeft');
 //testing 
     console.log(choosenWord);
 //Create the underscores
-    let generateUnderscore = () => { 
+    var generateUnderscore = () => { 
     for (let i = 0; i < choosenWord.length; i++){
         underScore.push('_');
     }
