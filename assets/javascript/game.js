@@ -82,7 +82,7 @@ correctly guessed letters must display on invisible word
             
             alert('You Win');
        document.getElementById('picture').src = '../assets/images/win.jpg'
-        document.querySelector('.play_again').style.display = 'block';
+//        document.querySelector('.play_again').style.display = 'block';
         document.querySelector('.rightGuess').style.display = 'none';
         document.querySelector('.wrongGuess').style.display = 'none';
         document.querySelector('.guessLeft').style.display = 'none';
