@@ -46,15 +46,16 @@ correctly guessed letters must display on invisible word
         
     
 //////////////////////////////////////////////////////////////  
-    function ifCorrect (){
-    
-        document.getElementById('picture').src = '../assets/images/hang' + guessLeft+ '.jpg';
-}
+//    function ifCorrect (){
+//    
+//        document.getElementById('picture').src = '../assets/images/hang' + guessLeft+ '.jpg';
+//}
         
     function ifWrong (){
     
-        document.getElementById('picture').src = '../assets/images/hang' + guessLeft+ '.jpg';
-}    
+        document.getElementById('picture').src = '../assets/images/hang' + guessLeft+ '.jpg';}    
+        
+        
 //////////////////////////////////////////////////////////////  
         
     if (choosenWord.indexOf(keyword) > -1) {
@@ -92,7 +93,7 @@ correctly guessed letters must display on invisible word
         } else if ((guessLeft -1) === 1){
             
            alert('You Lose the word was: '+choosenWord ); 
-        document.querySelector('.play_again').style.display = 'block';
+//        document.querySelector('.play_again').style.display = 'block';
         document.querySelector('.rightGuess').style.display = 'none';
         document.querySelector('.wrongGuess').style.display = 'none';
         document.querySelector('.guessLeft').style.display = 'none';
@@ -137,6 +138,7 @@ document.querySelector('.btn-new').addEventListener('click', function() {
 //////////////////////////////////////////////////////////////////////////////////////    
 
 });
+
 
 
 
