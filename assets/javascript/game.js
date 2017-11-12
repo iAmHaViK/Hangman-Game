@@ -53,7 +53,7 @@ correctly guessed letters must display on invisible word
         
     function ifWrong (){
     
-        document.getElementById('picture').src = '../assets/images/hang' + guessLeft+ '.jpg';}    
+        document.getElementById('picture').src = '../../hang' + guessLeft+ '.jpg';}    
         
         
 //////////////////////////////////////////////////////////////  
