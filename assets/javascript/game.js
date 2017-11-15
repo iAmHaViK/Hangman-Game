@@ -51,10 +51,7 @@ correctly guessed letters must display on invisible word
 //        document.getElementById('picture').src = '../assets/images/hang' + guessLeft+ '.jpg';
 //}
         
-    function ifWrong (){
-    
-        document.getElementById('picture').src = '../../hang' + guessLeft+ '.jpg';}    
-        
+   
         
 //////////////////////////////////////////////////////////////  
         
@@ -81,7 +78,7 @@ correctly guessed letters must display on invisible word
     if(underScore.join('') === choosenWord) {
             
             alert('You Win');
-       document.getElementById('picture').src = '../assets/images/win.jpg'
+       document.getElementById('picture').src = 'win.JPG'
 //        document.querySelector('.play_again').style.display = 'block';
         document.querySelector('.rightGuess').style.display = 'none';
         document.querySelector('.wrongGuess').style.display = 'none';
@@ -108,6 +105,13 @@ correctly guessed letters must display on invisible word
 //    function GuessesLefts (){
     docGuessLeft[0].innerHTML = guessLeft -2;
 // Update Pictures when wrong or correct///////////
+        
+         function ifWrong (){
+    
+        document.getElementById('picture').src = 'hang' + guessLeft+ '.JPG';
+        
+    }    
+        
 
     });
 //check if answer is right
